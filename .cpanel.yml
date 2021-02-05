@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/narundjg/public_html
     - /bin/cp /build/* $DEPLOYPATH
+    - /bin/cp /build/index.html $DEPLOYPATH
