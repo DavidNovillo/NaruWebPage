@@ -361,7 +361,13 @@ form {
   padding: 16px;
   border-radius: 32px;
   display: inline-block;
-  width: 80%;
+  width: 90%;
+}
+
+@media (max-width: 1661px) and (min-width: 1200px) {
+  .precios-section h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .precios-section .black-square {

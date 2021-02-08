@@ -1,7 +1,7 @@
 {
   "name": "naru-web-page",
   "version": "0.1.0",
-  "homepage": "https://narucrossfit.com",
+  "homepage": "http://narucrossfit.com",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
