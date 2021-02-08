@@ -1,0 +1,632 @@
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+}
+header {
+  padding: 0 150px 0 150px;
+}
+
+footer {
+  background-color: #0a0a0a;
+  height: 100%;
+  width: 100%;
+  padding: 30px 135px 2px;
+}
+
+footer .logo {
+  max-width: 100%;
+  flex-basis: 40%;
+  margin-right: 15px;
+}
+
+footer p {
+  padding-left: 0;
+  font-size: medium;
+}
+
+.top-padding {
+  padding-top: 150px;
+}
+
+.bottom-margin {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1199px) {
+  .top-padding {
+    padding-top: 50px;
+  }
+}
+
+.copyright {
+  color: grey;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-icons {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fdfffa;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 4.3rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #fdfffa;
+  padding-left: 1rem;
+  padding-top: 12rem;
+}
+
+h2 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #fdfffa;
+}
+h3 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 2.1rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fdfffa;
+  padding-left: 15px;
+}
+
+h4 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #fdfffa;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  padding-left: 1rem;
+  color: #fdfffa;
+}
+
+form {
+  padding: 2rem;
+}
+
+.zoom-form {
+  font-family: Roboto;
+  background-color: hsla(84, 2%, 100%, 0.5);
+  border-radius: 16px;
+  margin: 7rem auto 0 auto;
+  height: 100%;
+}
+
+.left-offset .zoom-form .custom-button {
+  margin-bottom: 10px;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.22);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fdfffa;
+  font-family: Montserrat;
+  font-size: 0.96rem;
+  font-weight: 600;
+  margin-left: 23px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.home-section {
+  background-image: url("./images/fondo1.png");
+  height: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+
+.left-offset {
+  padding: 0 150px 85px;
+  margin-bottom: 85px;
+}
+.left-offset .custom-button {
+  margin-bottom: 90px;
+}
+
+.custom-button {
+  margin: 1rem;
+  font-family: Roboto;
+  font-size: 1rem;
+  padding: 0.9rem 1.3rem;
+  font-weight: 400;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
+  background-color: #4875b8;
+  border-color: #4875b8;
+}
+
+.whatsapp-button {
+  font-family: Roboto;
+  font-size: 1rem;
+  padding: 0.9rem 1.3rem;
+  font-weight: 400;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
+  background-color: #4fce5d;
+  border-color: #4fce5d;
+}
+.icono-whatsapp {
+  font-size: 1.5rem;
+}
+
+.black-triangle {
+  background-image: url("./images/black_triangle.png");
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 165px;
+  width: 100%;
+}
+
+.protocolos {
+  height: 100%;
+  background-color: #1b1b1b;
+  width: 100%;
+  text-align: left;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.blue-square {
+  background-color: #1d2951;
+  border-radius: 16px;
+  margin: 3rem 0 6rem -15px;
+}
+
+.foto-protocolos {
+  background-image: url("./images/protocolos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 0 -15px;
+}
+
+.iconos-protocolo {
+  font-size: 3rem;
+  color: #fdfffa;
+  margin-right: 15px;
+}
+
+.crossfit-section {
+  background-image: url("./images/fondo2.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 135px;
+}
+
+.black-square {
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  background-color: hsla(0, 0%, 11%, 0.692);
+  padding: 15px;
+  margin: 15px auto 50px;
+}
+
+.afiliaciones-section {
+  background-color: #fdfffa;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 80px 135px;
+}
+
+.afiliaciones-section h2 {
+  color: #1b1b1b;
+}
+
+.afiliaciones {
+  margin: 30px;
+}
+
+.acerca-section {
+  background-image: url("./images/fondo3.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.square-margin {
+  margin: 80px 150px 0;
+  padding: 5%;
+}
+
+.staff-section {
+  background-color: #fdfffa;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 80px 135px;
+}
+
+.staff-section h2 {
+  color: #1b1b1b;
+  padding-bottom: 80px;
+}
+.staff-section h4 {
+  color: #1b1b1b;
+  padding-top: 30px;
+}
+.staff-section p {
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.photos {
+  height: 70%;
+  width: 60%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  border-radius: 8px;
+}
+.photos:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.instalaciones-section {
+  background-color: #1d2951;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 80px 135px;
+}
+
+.carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  border-radius: 8px;
+  margin-top: 50px;
+  object-position: center center;
+  text-align: center;
+}
+
+.precios-section {
+  background-image: url("./images/fondo4.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.precios-section .square-margin {
+  margin: 10px 150px 0;
+  padding: 4%;
+}
+
+.precios-section h4 {
+  background-color: #1d2951;
+  padding: 16px;
+  border-radius: 32px;
+  display: inline-block;
+  width: 90%;
+}
+
+@media (max-width: 1661px) and (min-width: 1200px) {
+  .precios-section h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.precios-section .black-square {
+  padding: 0;
+  margin: -40px auto 30px;
+}
+
+.precios-section h1 {
+  padding: 3.5rem 0 0.5rem;
+}
+.precios-section p {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.separador {
+  width: 80%;
+  border-top: 1px solid #797979;
+}
+
+.horarios-section {
+  background-color: #fdfffa;
+  text-align: center;
+  margin: 0;
+  padding: 6% 9%;
+}
+
+.horarios-section h3 {
+  background-color: #1d2951;
+  padding: 24px;
+  margin: auto;
+  border-radius: 44px;
+  display: inline-block;
+  text-align: center;
+}
+
+.horarios-section .black-square {
+  padding: 80px 30px 30px;
+  margin: -40px auto 0;
+}
+
+.horarios-section p {
+  background-color: #1d2951;
+  padding: 16px;
+  margin: 16px auto;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+.horarios-online-section {
+  background-color: #1d2951;
+  text-align: center;
+  margin: 0;
+  padding: 6% 9%;
+}
+
+.horarios-online-section h3 {
+  background-color: #fdfffa;
+  color: #1d2951;
+  padding: 24px;
+  margin: auto;
+  border-radius: 44px;
+  display: inline-block;
+  text-align: center;
+}
+
+.horarios-online-section .black-square {
+  padding: 80px 30px 30px;
+  margin: -40px auto 0;
+}
+
+.horarios-online-section p {
+  background-color: #fdfffa;
+  color: #1d2951;
+  padding: 16px;
+  margin: 16px auto;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+.programas-section {
+  background-image: url("./images/fondo5.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.programas-section .photos {
+  height: 60%;
+  width: 55%;
+  object-fit: cover;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  border-radius: 8px;
+}
+
+.contacto-section {
+  background-image: url("./images/fondo6.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.contacto {
+  width: 40%;
+  margin: 30px auto;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-3 {
+    max-width: 23%;
+  }
+}
+@media (max-width: 900px) {
+  .custom-button,
+  p {
+    width: 100%;
+    margin-left: 0;
+    padding: 16px 0;
+  }
+  h1,
+  h2 {
+    text-align: center;
+    margin: auto;
+  }
+  .zoom-form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* condiciones para celular vertical */
+@media (max-device-width: 414px) {
+  h1,
+  h2,
+  p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    padding-top: 50px;
+    font-size: 3.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.6rem;
+  }
+  .home-section {
+    text-align: center;
+  }
+  form,
+  .form-control {
+    font-size: 2.6rem;
+  }
+  .zoom-form .custom-button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .zoom-form {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .black-triangle {
+    height: 200px;
+  }
+  .navbar-dark .navbar-nav .nav-link,
+  .dropdown-item {
+    font-size: 2.5rem;
+    padding-top: 25px;
+  }
+  .logo {
+    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.22);
+  }
+  .navbar-toggler-icon {
+    width: 3.5em;
+    height: 3.5em;
+    background-size: 100% 100%;
+  }
+  .custom-button,
+  .whatsapp-button {
+    margin: 30px auto;
+    width: 100%;
+    display: block;
+    font-size: 2.3rem;
+  }
+  .iconos-protocolo {
+    font-size: 3.5rem;
+  }
+  .protocolos p {
+    text-align: left;
+  }
+  .protocolos {
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+  footer p,
+  .icono-whatsapp {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+  .footer-icons {
+    font-size: 5rem;
+  }
+  .bottom-margin {
+    margin-bottom: 250px;
+  }
+  .photos {
+    width: 90%;
+  }
+  .square-margin {
+    margin: 80px 80px 0;
+  }
+  .acerca-section p {
+    text-align: left;
+  }
+  .programas-section .photos {
+    width: 90%;
+  }
+  .programas-section p {
+    text-align: left;
+  }
+  .contacto {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .precios-section h4 {
+    border-radius: 64px;
+  }
+  .precios-section .black-square {
+    padding: 0;
+    margin: -55px auto 30px;
+    width: 90%;
+  }
+  .precios-section p {
+    font-size: 2.6rem;
+  }
+}
