@@ -578,9 +578,14 @@ form {
   text-align: center;
   padding-bottom: 80px;
 }
+.contacto-section h2 {
+  margin-top: 180px;
+}
 .contacto {
   width: 40%;
   margin: 30px auto;
+  padding: 1%;
+  text-align: left;
 }
 
 @media (max-width: 992px) and (min-width: 501px) {
@@ -606,7 +611,7 @@ form {
   .precios-section h4 {
     font-size: 1.3rem;
   }
-  .zoom-form {
+  .home-section .zoom-form {
     margin-right: 0;
   }
 }
@@ -653,7 +658,7 @@ form {
     padding-left: 120px;
     margin-bottom: 0px;
   }
-  .zoom-form {
+  .home-section .zoom-form {
     width: 100%;
     margin: 0;
   }
@@ -693,9 +698,9 @@ form {
     margin: 130px 90px 0;
     padding: 4%;
   }
-  /* .precios-section h4 {
-    font-size: 1.3rem;
-  } */
+  .contacto {
+    width: 60%;
+  }
 }
 
 /* condiciones para celular vertical */
@@ -832,6 +837,9 @@ form {
   .precios-section .square-margin {
     margin: 130px 20px 0;
     padding: 4%;
+  }
+  .contacto {
+    width: 80%;
   }
   footer .logo {
     height: 80px;

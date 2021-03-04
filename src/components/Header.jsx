@@ -13,7 +13,7 @@ function Header() {
   const newStyle = {
     width: "80px",
     height: "80px",
-    transition: "0.2s ease-in",
+    transition: "0.3s ease-in",
   };
 
   const navStyle = {
@@ -38,7 +38,7 @@ function Header() {
           ? navStyle
           : {
               backgroundColor: "#0a0a0a",
-              transition: "0.2s ease-in",
+              transition: "0.3s ease-in",
               marginBottom: "0",
             }
       }
