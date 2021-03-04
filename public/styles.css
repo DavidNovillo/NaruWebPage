@@ -450,6 +450,7 @@ form {
   background-size: cover;
   text-align: center;
   padding-bottom: 80px;
+  background-attachment: fixed;
 }
 
 .precios-section .square-margin {
@@ -556,6 +557,7 @@ form {
   background-size: cover;
   text-align: center;
   padding-bottom: 80px;
+  background-attachment: fixed;
 }
 
 .programas-section .photos {
@@ -577,6 +579,7 @@ form {
   background-size: cover;
   text-align: center;
   padding-bottom: 80px;
+  background-attachment: fixed;
 }
 .contacto-section h2 {
   margin-top: 180px;
