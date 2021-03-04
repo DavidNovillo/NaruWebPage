@@ -30,7 +30,7 @@ function Protocolos() {
         BIOSEGURIDAD
       </h2>
       <Container fluid>
-        <Row className="justify-content-left" style={{ margin: "0" }}>
+        <Row className="justify-content-left">
           <Col xl={5} className="blue-square">
             <br />
             <p>
@@ -83,19 +83,25 @@ function Protocolos() {
             <div className="foto-protocolos"></div>
             <br />
             <p>
-              <GiPerson className="iconos-protocolo" />
-              <GiPerson className="iconos-protocolo" />4 metros de
-              distanciamiento
+              <div className="iconos-protocolo">
+                <GiPerson />
+                <GiPerson />
+              </div>
+              4 metros de distanciamiento
             </p>
             <p>
-              <GiWeightLiftingUp className="iconos-protocolo" />
-              <GiShield className="iconos-protocolo" />
+              <div className="iconos-protocolo">
+                <GiWeightLiftingUp />
+                <GiShield />
+              </div>
               Equipo de protección personal para entrenador
             </p>
             <p>
-              <GiWeightLiftingUp className="iconos-protocolo" />
-              <GiWeightLiftingDown className="iconos-protocolo" /> Zona segura
-              para entrenador a 2 metros de los atletas
+              <div className="iconos-protocolo">
+                <GiWeightLiftingUp />
+                <GiWeightLiftingDown />
+              </div>
+              Zona segura para entrenador a 2 metros de los atletas
             </p>
           </Col>
         </Row>

@@ -13,6 +13,7 @@ function CustomForm() {
     correo: "",
     telefono: "",
     fecha: "",
+    horario: "",
   });
 
   const [enviado, setEnviado] = useState(false);
@@ -48,10 +49,8 @@ function CustomForm() {
   return (
     <Form>
       <Form.Group as={Row} controlId="formZoom">
-        <Form.Label column sm="2">
-          Nombre
-        </Form.Label>
-        <Col lg="10" sm="12">
+        <Form.Label>Nombre</Form.Label>
+        <Col>
           <Form.Control
             type="text"
             placeholder="Nombre y apellido"
@@ -63,10 +62,8 @@ function CustomForm() {
         </Col>
       </Form.Group>
       <Form.Group as={Row} controlId="formZoom">
-        <Form.Label column sm="2">
-          Email
-        </Form.Label>
-        <Col lg="10" sm="12">
+        <Form.Label>Email</Form.Label>
+        <Col>
           <Form.Control
             type="email"
             placeholder="example@mail.com"
@@ -78,10 +75,8 @@ function CustomForm() {
         </Col>
       </Form.Group>
       <Form.Group as={Row} controlId="formZoom">
-        <Form.Label column sm="2">
-          Teléfono
-        </Form.Label>
-        <Col lg="10" sm="12">
+        <Form.Label>Teléfono</Form.Label>
+        <Col>
           <Form.Control
             type="text"
             placeholder="0999999999"
@@ -93,10 +88,8 @@ function CustomForm() {
         </Col>
       </Form.Group>
       <Form.Group as={Row} controlId="formZoom">
-        <Form.Label column sm="2">
-          Fecha
-        </Form.Label>
-        <Col lg="10" sm="12">
+        <Form.Label>Fecha</Form.Label>
+        <Col>
           <Form.Control
             type="date"
             placeholder=""
@@ -105,6 +98,22 @@ function CustomForm() {
             required
             value={informacion.fecha}
           />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} controlId="formZoom">
+        <Form.Label>Horario</Form.Label>
+        <Col>
+          <Form.Control
+            as="select"
+            name="horario"
+            onChange={handleChange}
+            required
+            value={informacion.horario}
+          >
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noche">Noche</option>
+          </Form.Control>
         </Col>
       </Form.Group>
       <div style={{ textAlign: "center" }}>

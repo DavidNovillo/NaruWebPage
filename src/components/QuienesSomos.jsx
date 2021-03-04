@@ -1,6 +1,5 @@
 import React from "react";
 import Acerca from "./Acerca";
-import Instalaciones from "./Instalaciones";
 import Staff from "./Staff";
 
 function QuienesSomos() {
@@ -8,7 +7,6 @@ function QuienesSomos() {
     <div>
       <Acerca />
       <Staff />
-      <Instalaciones />
     </div>
   );
 }

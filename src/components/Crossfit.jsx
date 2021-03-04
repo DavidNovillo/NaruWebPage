@@ -12,7 +12,7 @@ function Crossfit() {
       <br />
       <Container fluid>
         <Row>
-          <Col xl={3} lg={12} className="black-square">
+          <Col xl={3} lg={6} md={12} className="black-square">
             <h4>La clave para la salud y estar en forma</h4>
             <br />
             <p>
@@ -20,7 +20,7 @@ function Crossfit() {
               seguros, efectivos y una buena nutrición.
             </p>
           </Col>
-          <Col xl={3} lg={12} className="black-square">
+          <Col xl={3} lg={6} md={12} className="black-square">
             <h4>Los ejercicios</h4>
             <br />
             <p>
@@ -31,7 +31,7 @@ function Crossfit() {
               estado físico.
             </p>
           </Col>
-          <Col xl={3} lg={12} className="black-square">
+          <Col xl={3} lg={6} md={12} className="black-square">
             <h4>¿Es Crossfit para mí?</h4>
             <br />
             <p>
@@ -40,7 +40,7 @@ function Crossfit() {
               ayudar a cada persona a mejorar su estado físico de manera segura.
             </p>
           </Col>
-          <Col xl={3} lg={12} className="black-square">
+          <Col xl={3} lg={6} md={12} className="black-square">
             <h4>La comunidad</h4>
             <br />
             <p>
@@ -58,6 +58,7 @@ function Crossfit() {
         variant="primary"
         type="button"
         className="custom-button"
+        target="_blank"
       >
         CONOCER MÁS
       </Button>

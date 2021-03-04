@@ -1,9 +1,15 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "~react-image-gallery/styles/css/image-gallery.css";
 body {
   margin: 0;
   background-color: #0a0a0a;
 }
 header {
   padding: 0 150px 0 150px;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
 }
 
 footer {
@@ -17,11 +23,25 @@ footer .logo {
   max-width: 100%;
   flex-basis: 40%;
   margin-right: 15px;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 footer p {
   padding-left: 0;
   font-size: medium;
+  text-align: left;
+}
+
+footer h4 {
+  white-space: nowrap;
+}
+
+footer .top-padding {
+  padding-top: 150px;
+}
+footer iframe {
+  min-width: 350px;
 }
 
 .top-padding {
@@ -30,11 +50,16 @@ footer p {
 
 .bottom-margin {
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 1199px) {
   .top-padding {
     padding-top: 50px;
+  }
+  header {
+    display: block;
   }
 }
 
@@ -59,7 +84,7 @@ footer p {
 h1 {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   font-family: Montserrat;
-  font-size: 4.3rem;
+  font-size: 4.1rem;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -68,6 +93,7 @@ h1 {
   color: #fdfffa;
   padding-left: 1rem;
   padding-top: 12rem;
+  white-space: nowrap;
 }
 
 h2 {
@@ -121,14 +147,21 @@ p {
 }
 
 form {
-  padding: 2rem;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+}
+
+.form-label {
+  width: 60px;
+  padding-top: 8px;
 }
 
 .zoom-form {
   font-family: Roboto;
   background-color: hsla(84, 2%, 100%, 0.5);
   border-radius: 16px;
-  margin: 7rem auto 0 auto;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
 }
 
@@ -138,8 +171,8 @@ form {
 
 .logo {
   border-radius: 100%;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.22);
 }
 
@@ -151,6 +184,12 @@ form {
   margin-left: 23px;
   padding-left: 0;
   text-transform: uppercase;
+  width: fit-content;
+  white-space: nowrap;
+}
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .home-section {
@@ -160,11 +199,16 @@ form {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
+  background-attachment: fixed;
 }
 
 .left-offset {
-  padding: 0 150px 85px;
+  padding: 120px 150px 85px;
   margin-bottom: 85px;
+}
+
+.top-offset {
+  padding-top: 150px;
 }
 .left-offset .custom-button {
   margin-bottom: 90px;
@@ -217,7 +261,7 @@ form {
 .blue-square {
   background-color: #1d2951;
   border-radius: 16px;
-  margin: 3rem 0 6rem -15px;
+  margin: 3rem 0 6rem 0;
 }
 
 .foto-protocolos {
@@ -233,6 +277,7 @@ form {
   font-size: 3rem;
   color: #fdfffa;
   margin-right: 15px;
+  display: inline;
 }
 
 .crossfit-section {
@@ -244,6 +289,7 @@ form {
   background-size: cover;
   text-align: center;
   padding: 80px 135px;
+  background-attachment: fixed;
 }
 
 .black-square {
@@ -279,10 +325,11 @@ form {
   background-size: cover;
   text-align: center;
   padding-bottom: 80px;
+  background-attachment: fixed;
 }
 
 .square-margin {
-  margin: 80px 150px 0;
+  margin: 200px 150px 0;
   padding: 5%;
 }
 
@@ -305,20 +352,63 @@ form {
 .staff-section p {
   color: #1b1b1b;
   text-align: center;
+  padding-left: 0;
 }
 
 .photos {
-  height: 70%;
-  width: 60%;
+  width: 100%;
   object-fit: cover;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
   border-radius: 8px;
+  position: relative;
+  max-height: 450px;
+  max-width: 478px;
 }
+
 .photos:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  filter: blur(8px) grayscale(100%);
+}
+
+.photos:active {
+  filter: blur(8px) grayscale(100%);
+}
+
+#photo-jorge,
+#photo-leo,
+#photo-antonieta,
+#photo-mauricio {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photo-jorge:hover ~ .photos-text {
+  display: block;
+}
+#photo-leo:hover ~ .photos-text {
+  display: block;
+}
+#photo-antonieta:hover ~ .photos-text {
+  display: block;
+}
+#photo-mauricio:hover ~ .photos-text {
+  display: block;
+}
+
+.photos-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  pointer-events: none;
+}
+
+.photos-text p {
+  color: #fdfffa;
+  text-shadow: 2px 2px 4px #0a0a0a;
 }
 
 .instalaciones-section {
@@ -329,15 +419,26 @@ form {
   padding: 80px 135px;
 }
 
-.carousel-img {
+.galeria-section {
+  background-image: url("./images/fondo3.png");
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
-  border-radius: 8px;
-  margin-top: 50px;
-  object-position: center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  background-attachment: fixed;
+}
+
+.image-gallery {
+  padding: 0 150px 80px;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 680px;
+  cursor: initial;
 }
 
 .precios-section {
@@ -352,7 +453,7 @@ form {
 }
 
 .precios-section .square-margin {
-  margin: 10px 150px 0;
+  margin: 130px 0 0;
   padding: 4%;
 }
 
@@ -362,12 +463,6 @@ form {
   border-radius: 32px;
   display: inline-block;
   width: 90%;
-}
-
-@media (max-width: 1661px) and (min-width: 1200px) {
-  .precios-section h4 {
-    font-size: 1.2rem;
-  }
 }
 
 .precios-section .black-square {
@@ -488,145 +583,290 @@ form {
   margin: 30px auto;
 }
 
+@media (max-width: 992px) and (min-width: 501px) {
+  footer .top-padding {
+    padding-top: 0;
+  }
+  .afiliaciones {
+    max-width: 400px;
+    height: auto;
+  }
+  .afiliaciones-section {
+    padding: 80px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .precios-section .square-margin {
+    margin: 130px 150px 0;
+    padding: 4%;
+  }
+}
+
+@media (max-width: 1661px) and (min-width: 1200px) {
+  .precios-section h4 {
+    font-size: 1.3rem;
+  }
+  .zoom-form {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .col-xl-3 {
     max-width: 23%;
   }
 }
-@media (max-width: 900px) {
-  .custom-button,
-  p {
-    width: 100%;
-    margin-left: 0;
-    padding: 16px 0;
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .col-lg-6 {
+    max-width: 45%;
   }
-  h1,
-  h2 {
-    text-align: center;
-    margin: auto;
-  }
-  .zoom-form {
-    width: 100%;
-    margin: 0;
+  .precios-section .square-margin {
+    margin: 130px 60px 0;
+    padding: 4%;
   }
 }
 
-/* condiciones para celular vertical */
-@media (max-device-width: 414px) {
-  h1,
-  h2,
+@media (max-width: 800px) and (min-width: 577px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  .custom-button,
   p {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1,
+  h2 {
     text-align: center;
     margin: auto;
-    padding-bottom: 50px;
+    white-space: normal;
   }
-  h1 {
-    font-size: 8rem;
+  header {
+    padding-right: 120px;
+    padding-left: 120px;
   }
-  h2 {
-    padding-top: 50px;
-    font-size: 3.8rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 2.6rem;
-  }
-  .home-section {
-    text-align: center;
-  }
-  form,
-  .form-control {
-    font-size: 2.6rem;
-  }
-  .zoom-form .custom-button {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  .left-offset {
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-bottom: 0px;
   }
   .zoom-form {
     width: 100%;
     margin: 0;
-    height: auto;
   }
-  .black-triangle {
-    height: 200px;
+  .naru-crossfit p {
+    padding: 0;
   }
-  .navbar-dark .navbar-nav .nav-link,
-  .dropdown-item {
-    font-size: 2.5rem;
-    padding-top: 25px;
-  }
-  .logo {
-    border-radius: 100%;
-    width: 220px;
-    height: 220px;
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.22);
-  }
-  .navbar-toggler-icon {
-    width: 3.5em;
-    height: 3.5em;
-    background-size: 100% 100%;
-  }
-  .custom-button,
-  .whatsapp-button {
-    margin: 30px auto;
-    width: 100%;
-    display: block;
-    font-size: 2.3rem;
-  }
-  .iconos-protocolo {
-    font-size: 3.5rem;
+  .protocolos {
+    padding: 0 80px;
   }
   .protocolos p {
     text-align: left;
   }
-  .protocolos {
-    padding-left: 120px;
-    padding-right: 100px;
-  }
-  footer p,
-  .icono-whatsapp {
-    font-size: 2.6rem;
-    text-align: left;
-  }
-  .footer-icons {
-    font-size: 5rem;
-  }
-  .bottom-margin {
-    margin-bottom: 250px;
-  }
-  .photos {
-    width: 90%;
+
+  .protocolos h3 {
+    font-size: 1.7rem;
   }
   .square-margin {
-    margin: 80px 80px 0;
+    margin-left: 80px;
+    margin-right: 80px;
   }
-  .acerca-section p {
-    text-align: left;
+  .photos {
+    max-height: 393px;
   }
-  .programas-section .photos {
-    width: 90%;
+  #photo-jorge,
+  #photo-leo,
+  #photo-antonieta,
+  #photo-mauricio {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .programas-section p {
-    text-align: left;
+  .image-gallery {
+    padding: 0 80px 80px;
   }
-  .contacto {
-    width: 80%;
-    margin: 30px auto;
+  .precios-section .square-margin {
+    margin: 130px 90px 0;
+    padding: 4%;
   }
-  .precios-section h4 {
-    border-radius: 64px;
+  /* .precios-section h4 {
+    font-size: 1.3rem;
+  } */
+}
+
+/* condiciones para celular vertical */
+@media (max-width: 576px) {
+  h1 {
+    padding: 6rem 0 0;
+    font-size: 2.8rem;
+    text-align: center;
+    white-space: normal;
   }
-  .precios-section .black-square {
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
     padding: 0;
-    margin: -55px auto 30px;
-    width: 90%;
+    margin-bottom: 0;
   }
-  .precios-section p {
-    font-size: 2.6rem;
+  h4 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  header {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  .logo {
+    width: 95px;
+    height: 95px;
+  }
+  .navbar-dark .navbar-nav .nav-link,
+  .dropdown-toggle .nav-link {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .left-offset {
+    padding: 120px 36px 0;
+    margin-bottom: 0px;
+  }
+
+  .custom-button {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .protocolos,
+  .crossfit-section,
+  .afiliaciones-section,
+  .staff-section,
+  footer {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 36px;
+    padding-top: 46px;
+  }
+  .blue-square {
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+  .foto-protocolos {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 120px;
+    margin: 0 -10px;
+  }
+  .iconos-protocolo {
+    display: block;
+    margin: 0 auto;
+  }
+  .black-square {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .crossfit-section p {
+    padding: 0;
+  }
+  .afiliaciones {
+    margin: 15px auto;
+    display: block;
+    padding-bottom: 15px;
+    max-width: 80%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+  }
+  .crossfit-kids {
+    width: 130px;
+  }
+
+  .square-margin {
+    margin: 160px 36px 0;
+  }
+
+  .photos {
+    max-height: 370px;
+  }
+
+  #photo-jorge,
+  #photo-leo,
+  #photo-antonieta,
+  #photo-mauricio {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #photo-jorge:active ~ .photos-text {
+    display: block;
+  }
+  #photo-leo:active ~ .photos-text {
+    display: block;
+  }
+  #photo-antonieta:active ~ .photos-text {
+    display: block;
+  }
+  #photo-mauricio:active ~ .photos-text {
+    display: block;
+  }
+  .image-gallery {
+    padding: 0 36px 80px;
+  }
+  .precios-section .square-margin {
+    margin: 130px 20px 0;
+    padding: 4%;
+  }
+  footer .logo {
+    height: 80px;
+    width: 80px;
+  }
+  footer iframe {
+    height: 250px;
+    margin-top: 15px;
+    min-width: 200px;
+  }
+  footer .top-padding {
+    padding: 10px 15px;
+  }
+  footer p {
+    padding: 0;
+    text-align: left;
+  }
+  .naru-crossfit h4 {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 1.05rem;
+  }
+  .naru-crossfit p {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .whatsapp-button {
+    width: 100%;
+  }
+  .center-text {
+    text-align: center;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    margin-bottom: 0;
   }
 }

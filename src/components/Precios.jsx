@@ -12,7 +12,7 @@ function Precios() {
         <br />
         <br />
         <Container fluid>
-          <Row className="justify-content-xl-center">
+          <Row className="justify-content-center">
             <Col xl={3} lg={6}>
               <h4>DROP IN</h4>
               <div className="black-square">
@@ -40,7 +40,7 @@ function Precios() {
             <Col xl={3} lg={6}>
               <h4>ONLINE</h4>
               <div className="black-square">
-                <h1>$50</h1>
+                <h1>$40</h1>
                 <hr className="separador"></hr>
                 <p>Clases vía Zoom</p>
               </div>

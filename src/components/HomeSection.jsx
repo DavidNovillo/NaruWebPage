@@ -24,7 +24,7 @@ function HomeSection() {
         <Header />
         <Container fluid className="left-offset">
           <Row>
-            <Col xl={5} lg={12}>
+            <Col xl={7} lg={12}>
               <h1>NARU CROSSFIT</h1>
               <p>
                 Naru CrossFit es un lugar donde desarrollarás tus capacidades
@@ -41,8 +41,8 @@ function HomeSection() {
               </Button>
             </Col>
             <Col
-              xl={{ span: 5, offset: 2 }}
-              lg={12}
+              xl={{ span: 4, offset: 1 }}
+              lg={7}
               className="zoom-form"
               style={{ display: showForm ? "" : "none" }}
             >

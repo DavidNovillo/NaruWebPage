@@ -6,7 +6,7 @@ function ProgramaGrupal() {
     <div className="programas-section">
       <Header />
       <div className="black-square square-margin">
-        <h2>PROGRAMA GRUPAL</h2>
+        <h2>CROSSFIT</h2>
         <br />
         <img src="/images/estacion.png" alt="" className="photos" />
         <br />

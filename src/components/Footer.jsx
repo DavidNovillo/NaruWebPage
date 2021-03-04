@@ -18,12 +18,12 @@ function Footer() {
     <footer>
       <Container fluid />
       <Row>
-        <Col xl={4} lg={12}>
+        <Col xl={4} lg={6} md={12}>
           <div className="container-footer">
             <div>
               <img className="logo" src="/images/naru1.jpg" alt="" />
             </div>
-            <div>
+            <div className="naru-crossfit">
               <h4>NARU CROSSFIT</h4>
               <p>Libera tu mente</p>
             </div>
@@ -39,51 +39,71 @@ function Footer() {
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
+            target="_blank"
+            rel="noreferrer"
           ></iframe>
           <br />
           <br />
         </Col>
-        <Col xl={1}></Col>
-        <Col xl={3} className="top-padding">
+        <Col xl={1} lg={1}></Col>
+        <Col xl={3} lg={5} md={12} className="top-padding">
           <p>
             <FaPhoneAlt /> 0985539433
           </p>
           <p>
             <FaEnvelope /> info@narucrossfit.com
           </p>
-          <a href="https://maps.google.com/maps?ll=-0.151379,-78.485665&z=17&t=m&hl=en&gl=EC&mapclient=embed&daddr=Naru%20CrossFit%20Los%20Cactus%20Oe1-170%20y%20Quito%20170512@-0.1513788,-78.4856648">
+          <a
+            href="https://maps.google.com/maps?ll=-0.151379,-78.485665&z=17&t=m&hl=en&gl=EC&mapclient=embed&daddr=Naru%20CrossFit%20Los%20Cactus%20Oe1-170%20y%20Quito%20170512@-0.1513788,-78.4856648"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
             <p>
               <FaMapMarkerAlt /> Los Cactus Oe1-170 Quito, Ecuador
             </p>
           </a>
           <br />
-          <p>¿Tienes alguna duda?</p>
+          <p className="center-text">¿Tienes alguna duda?</p>
           <Button
             href="https://api.whatsapp.com/send?phone=593985539433"
             className="whatsapp-button"
             variant="success"
+            target="_blank"
           >
             <FaWhatsapp className="icono-whatsapp" /> CONTÁCTANOS
           </Button>
         </Col>
         <Col xl={1}></Col>
         <Col className="top-padding">
-          <p>
+          <p className="center-text">
             Síguenos en:
             <br />
-            <a href="https://www.facebook.com/NaruCrossFit/">
+            <a
+              href="https://www.facebook.com/NaruCrossFit/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebookSquare className="footer-icons" />
             </a>
-            <a href="https://www.instagram.com/narucrossfit/">
+            <a
+              href="https://www.instagram.com/narucrossfit/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagramSquare className="footer-icons" />
             </a>
-            <a href="https://www.youtube.com/channel/UC26bQJb0hpYqNzxACg4spFA">
+            <a
+              href="https://www.youtube.com/channel/UC26bQJb0hpYqNzxACg4spFA"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaYoutubeSquare className="footer-icons" />
             </a>
           </p>
         </Col>
       </Row>
-      <p className="copyright">© Copyright {year} Naru Crossfit</p>
+      <p className="copyright center-text">© Copyright {year} Naru Crossfit</p>
     </footer>
   );
 }

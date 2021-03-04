@@ -4,9 +4,9 @@ function Afiliaciones() {
   return (
     <div className="afiliaciones-section">
       <h2>NUESTRAS AFILICACIONES</h2>
-      <a href="https://kids.crossfit.com">
+      <a href="https://kids.crossfit.com" target="_blank" rel="noreferrer">
         <img
-          className="afiliaciones"
+          className="afiliaciones crossfit-kids"
           src="http://media.crossfit.com/badges/CFK_logo_v_tag_color_lightbg.png"
           alt=""
         />
@@ -14,6 +14,8 @@ function Afiliaciones() {
       <a
         href="http://journal.crossfit.com/start.tpl?version=CFJ-graphic300x150"
         title="CrossFit Journal: The Performance-Based Lifestyle Resource"
+        target="_blank"
+        rel="noreferrer"
       >
         <img
           className="afiliaciones"
@@ -24,12 +26,12 @@ function Afiliaciones() {
         />
       </a>
 
-      <a href="http://beyondthewhiteboard.com">
+      <a href="http://beyondthewhiteboard.com" target="_blank" rel="noreferrer">
         <img
           className="afiliaciones"
           src="/images/btwb.png"
           alt=""
-          height="70px"
+          height="90px"
         />
       </a>
     </div>
