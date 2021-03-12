@@ -639,6 +639,7 @@ td {
   padding-top: 230px;
   padding-bottom: 40px;
   background-attachment: fixed;
+  transition: ease-in-out 0.5s;
 }
 .workouts-section p {
   text-align: center;

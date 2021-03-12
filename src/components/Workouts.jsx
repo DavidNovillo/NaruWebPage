@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import Header from "./Header";
 
 class Workouts extends Component {
   componentDidMount() {
@@ -14,19 +15,20 @@ class Workouts extends Component {
 
   render() {
     const fondos = ["fondo-1", "fondo-2", "fondo-3", "fondo-4"];
-    const fondo = Math.floor(Math.random() * 4);
-    console.log(fondos[fondo]);
     return (
       <div className="Workouts" ref={(el) => (this.div = el)}>
+        <Header />
         <div
-          className={"btwb_webwidget workouts-section " + fondos[fondo]}
+          className={
+            "btwb_webwidget workouts-section " +
+            fondos[Math.floor(Math.random() * 4)]
+          }
           data-type="wods"
           data-sections="main"
           data-track_ids={644257}
           data-activity_length="0"
           data-leaderboard_length="0"
           data-days="1"
-          data-date={this.props.fecha}
           title="wod"
         ></div>
         <div
