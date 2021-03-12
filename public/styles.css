@@ -121,7 +121,8 @@ h3 {
   padding-left: 15px;
 }
 
-h4 {
+h4,
+h6 {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   font-family: Montserrat;
   font-size: 1.6rem;
@@ -441,6 +442,21 @@ form {
   cursor: initial;
 }
 
+.instagram-section {
+  background-color: #fdfffa;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 80px 150px;
+}
+
+.instagram-section ._wPDyp {
+  padding: 15px;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .precios-section {
   background-image: url("./images/fondo4.png");
   height: 100%;
@@ -490,16 +506,61 @@ form {
   background-color: #fdfffa;
   text-align: center;
   margin: 0;
-  padding: 6% 9%;
+  padding: 5% 9%;
 }
 
-.horarios-section h3 {
-  background-color: #1d2951;
+.horarios-section a.nav-item.nav-link {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #0a0a0a;
+}
+
+.horarios-section .nav-item.nav-link.active {
+  background-color: hsla(0, 0%, 11%, 1);
+  color: #fdfffa;
+  border: solid 1px hsla(0, 0%, 11%, 1);
+}
+
+table {
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  background-color: hsla(0, 0%, 11%, 0.692);
+  border-top: solid 2px hsla(0, 0%, 11%, 1);
+}
+th {
+  background-color: hsla(0, 0%, 11%, 1);
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #fdfffa;
+}
+
+td {
+  color: #fdfffa;
+}
+
+.horarios-section h2 {
+  /* background-color: #1d2951; */
   padding: 24px;
   margin: auto;
   border-radius: 44px;
   display: inline-block;
   text-align: center;
+  color: #0a0a0a;
+}
+.horarios-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 12px;
 }
 
 .horarios-section .black-square {
@@ -509,11 +570,21 @@ form {
 
 .horarios-section p {
   background-color: #1d2951;
-  padding: 16px;
-  margin: 16px auto;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.52);
+  padding: 12px 0;
+  margin: 0 auto;
   border-radius: 8px;
   display: inline-block;
   text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 145px;
+  min-width: 109px;
+}
+
+.horarios-section .inverted-colors p {
+  background-color: #fdfffa;
+  color: #1d2951;
 }
 
 .horarios-online-section {
@@ -547,7 +618,36 @@ form {
   display: inline-block;
   text-align: center;
 }
+.workouts-section {
+  background-image: url("./images/fondo5.png");
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 80px;
+  background-attachment: fixed;
+}
+.workouts-section p {
+  text-align: center;
+  padding: 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.workouts-section small,
+hr {
+  display: none;
+}
+
+.actividades-section {
+  background-color: #fdfffa;
+  text-align: left;
+  margin: 0 auto;
+  padding: 5% 9%;
+}
 .programas-section {
   background-image: url("./images/fondo5.png");
   height: 100%;
@@ -633,8 +733,23 @@ form {
     margin: 130px 60px 0;
     padding: 4%;
   }
+  .horarios-section h4 {
+    font-size: 1rem;
+  }
+  .horarios-section p {
+    font-size: 0.9rem;
+  }
 }
-
+@media (max-width: 1173px) and (min-width: 801px) {
+  .horarios-section h4 {
+    padding-top: 0;
+    font-size: 1rem;
+    max-width: 110px;
+  }
+  .horarios-section p {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 800px) and (min-width: 577px) {
   h1 {
     font-size: 3.6rem;
@@ -701,6 +816,22 @@ form {
     margin: 130px 90px 0;
     padding: 4%;
   }
+  .horarios-section h4 {
+    padding-top: 0;
+    font-size: 1rem;
+    max-width: 110px;
+  }
+  .horarios-section p {
+    font-size: 0.9rem;
+  }
+  .instagram-section{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .instagram-section ._wPDyp {
+   max-width: 300px;
+  }
+
   .contacto {
     width: 60%;
   }
@@ -763,6 +894,7 @@ form {
   .crossfit-section,
   .afiliaciones-section,
   .staff-section,
+  .instagram-section,
   footer {
     padding-left: 36px;
     padding-right: 36px;
@@ -840,6 +972,25 @@ form {
   .precios-section .square-margin {
     margin: 130px 20px 0;
     padding: 4%;
+  }
+  .horarios-section h4 {
+    font-size: 0.9rem;
+    padding-top: 0;
+  }
+  th {
+    font-size: 1.1rem;
+  }
+  .horarios-section p {
+    font-size: 0.9rem;
+    min-width: 92px;
+  }
+  .horarios-section a.nav-item.nav-link {
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .instagram-section ._wPDyp {
+    max-width: 300px;
   }
   .contacto {
     width: 80%;

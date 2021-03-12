@@ -64,13 +64,7 @@ function Header() {
             <Nav.Link href="/quienes-somos">Quiénes somos</Nav.Link>
             <Nav.Link href="/galeria">Galería</Nav.Link>
             <Nav.Link href="/precios-y-horarios">Precios y Horarios</Nav.Link>
-            <Nav.Link
-              href="http://beyondthewhiteboard.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              BTWB
-            </Nav.Link>
+            <Nav.Link href="/workouts">WORKOUTS</Nav.Link>
             <NavDropdown title="Programas" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/programa-grupal">
                 CROSSFIT

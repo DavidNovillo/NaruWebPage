@@ -13,7 +13,7 @@ function CustomForm() {
     correo: "",
     telefono: "",
     fecha: "",
-    horario: "",
+    horario: "Mañana",
   });
 
   const [enviado, setEnviado] = useState(false);

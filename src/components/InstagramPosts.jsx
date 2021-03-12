@@ -1,23 +1,14 @@
-import React, { useState } from "react";
-import GetPosts from "../GetPosts";
-
+import React from "react";
+import InstagramFeed from "react-ig-feed";
+import "react-ig-feed/dist/index.css";
 
 function InstagramPosts() {
-  const [postArray, setPostArray] = useState({});
-  function GetFeed() {
-    GetPosts.getInsPosts()
-      .then((res) => {
-        setPostArray(res);
-        console.log(postArray);
-      })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      });
-  }
   return (
-    <div>
-      <h1 onClick={GetFeed}>Instagram posts</h1>
+    <div className="instagram-section">
+      <InstagramFeed
+        token="IGQVJYOC1LY3E3UlhoVmp3bHBzQlFHVll4dFZA2SWw2dDF4Q1dQeENici1lMFRaLWVPV1FjanRDcU9zWlZA1aExfTDNfeVNYNUFLS2lTRm9WQnphRkhMTU1FcThtX1daUjBfeEFKTFFOZAXhwY0RUUEE4NQZDZD"
+        counter="12"
+      />
     </div>
   );
 }

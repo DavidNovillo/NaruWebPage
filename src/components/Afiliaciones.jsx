@@ -12,7 +12,7 @@ function Afiliaciones() {
         />
       </a>
       <a
-        href="http://journal.crossfit.com/start.tpl?version=CFJ-graphic300x150"
+        href="http://journal.crossfit.com"
         title="CrossFit Journal: The Performance-Based Lifestyle Resource"
         target="_blank"
         rel="noreferrer"

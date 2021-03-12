@@ -5,9 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import QuienesSomos from "./QuienesSomos";
 import Galeria from "./Galeria";
 import PreciosYHorarios from "./PreciosYHorarios";
+import WebWod from "./WebWod";
 import ProgramaGrupal from "./programas/ProgramaGrupal";
 import Contacto from "./Contacto";
 import ProgramaOnline from "./programas/ProgramaOnline";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/galeria" component={Galeria} />
           <Route path="/precios-y-horarios" component={PreciosYHorarios} />
+          <Route path="/workouts" component={WebWod} />
           <Route path="/programa-grupal" component={ProgramaGrupal} />
           <Route path="/programa-online" component={ProgramaOnline} />
           <Route path="/contacto" component={Contacto} />

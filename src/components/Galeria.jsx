@@ -20,14 +20,25 @@ function Galeria() {
     },
   ];
   return (
-    <div className="galeria-section">
-      <Header />
-      <ImageGallery
-        items={images}
-        showPlayButton={false}
-        showFullscreenButton={false}
-      />
-      {/* <InstagramPosts /> */}
+    <div>
+      <div className="galeria-section">
+        <Header />
+        <ImageGallery
+          items={images}
+          showPlayButton={false}
+          showFullscreenButton={false}
+        />
+        <div
+          class="btwb_webwidget"
+          data-type="wods"
+          data-sections="main"
+          data-track_ids="362333,460282"
+          data-activity_length="0"
+          data-leaderboard_length="0"
+          data-days="0"
+        ></div>
+      </div>
+      <InstagramPosts />
     </div>
   );
 }
