@@ -16,13 +16,15 @@ class Workouts extends Component {
   render() {
     const fondos = ["fondo-1", "fondo-2", "fondo-3", "fondo-4"];
     return (
-      <div className="Workouts" ref={(el) => (this.div = el)}>
+      <div
+        className={
+          "Workouts workouts-section " + fondos[Math.floor(Math.random() * 4)]
+        }
+        ref={(el) => (this.div = el)}
+      >
         <Header />
         <div
-          className={
-            "btwb_webwidget workouts-section " +
-            fondos[Math.floor(Math.random() * 4)]
-          }
+          className="btwb_webwidget"
           data-type="wods"
           data-sections="main"
           data-track_ids={644257}

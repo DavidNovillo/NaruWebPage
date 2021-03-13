@@ -640,10 +640,12 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 230px;
   padding-bottom: 40px;
   background-attachment: fixed;
   transition: ease-in-out 0.5s;
+}
+.workouts-section .btwb_webwidget{
+  padding-top: 250px;
 }
 .workouts-section p {
   text-align: center;
@@ -1017,6 +1019,9 @@ i {
   }
   .instagram-section ._wPDyp {
     max-width: 300px;
+  }
+  .workouts-section .btwb_webwidget{
+    padding-top: 200px;
   }
   .contacto {
     width: 80%;
