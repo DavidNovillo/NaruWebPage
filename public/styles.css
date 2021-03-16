@@ -640,11 +640,10 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-bottom: 40px;
   background-attachment: fixed;
   transition: ease-in-out 0.5s;
 }
-.workouts-section .btwb_webwidget {
+.workouts-section .btwb_webwidget:not(.actividades-section){
   padding-top: 250px;
 }
 .workouts-section p {
@@ -1020,7 +1019,7 @@ i {
   .instagram-section ._wPDyp {
     max-width: 300px;
   }
-  .workouts-section .btwb_webwidget {
+  .workouts-section .btwb_webwidget:not(.actividades-section) {
     padding-top: 200px;
   }
   .contacto {
