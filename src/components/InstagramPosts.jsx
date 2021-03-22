@@ -6,7 +6,7 @@ function InstagramPosts() {
   return (
     <div className="instagram-section">
       <InstagramFeed
-        token="IGQVJYOC1LY3E3UlhoVmp3bHBzQlFHVll4dFZA2SWw2dDF4Q1dQeENici1lMFRaLWVPV1FjanRDcU9zWlZA1aExfTDNfeVNYNUFLS2lTRm9WQnphRkhMTU1FcThtX1daUjBfeEFKTFFOZAXhwY0RUUEE4NQZDZD"
+        token="IGQVJXY0x2SjlISTFJdkoyZAHlmaVRlLXNXUGFWbXFNV0FybXB1ZAThUTndFeFI2OUVtNWp5b1hJc0NUNjlBUFhzcXdfWE1NM3lEZA3RzR0J3ZAWZAXa3ZAIS1BRbnhwMTBqdUxtQ056SU9reENtb2lfTWpjVwZDZD"
         counter="12"
       />
     </div>
