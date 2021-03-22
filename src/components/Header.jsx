@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
 
 function Header() {
   const [navBackground, setNavBackground] = useState(false);
@@ -21,6 +22,11 @@ function Header() {
     position: "static",
     marginBottom: "-136px",
     transition: "background-color 0.3s",
+  };
+
+  const showFloatingButtons = {
+    opacity: "100%",
+    transition: "0.3s ease-in",
   };
 
   React.useEffect(() => {
@@ -81,10 +87,39 @@ function Header() {
                 RUNNING
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/contacto">Contacto</Nav.Link>
+            <Nav.Link
+              href="https://naru-crossfit.triib.com/contact/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contacto
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <div
+        className="floating-buttons"
+        style={
+          navBackground
+            ? showFloatingButtons
+            : { opacity: "0%", transition: "0.3s ease-out" }
+        }
+      >
+        <Button
+          className="custom-button"
+          href="https://naru-crossfit.triib.com/free-trial/"
+          target="_blank"
+        >
+          AGENDAR CLASE DE PRUEBA
+        </Button>
+        <Button
+          className="custom-button"
+          href="https://naru-crossfit.triib.com/drop-in/"
+          target="_blank"
+        >
+          DROP IN
+        </Button>
+      </div>
     </header>
   );
 }

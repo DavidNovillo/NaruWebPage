@@ -44,7 +44,7 @@ function Staff() {
           <div id="photo-antonieta">
             <img src="/images/Antonieta.png" alt="" className="photos" />
           </div>
-          <h4>María Antonieta</h4>
+          <h4>Antonieta Villalba</h4>
           <p>Coach</p>
           <div className="photos-text">
             <p>

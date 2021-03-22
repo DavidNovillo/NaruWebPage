@@ -208,11 +208,30 @@ form {
   margin-bottom: 85px;
 }
 
+.home-section p {
+  max-width: 50%;
+}
+
 .top-offset {
   padding-top: 150px;
 }
 .left-offset .custom-button {
   margin-bottom: 90px;
+}
+
+.floating-buttons {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  /* width: 253px; */
+  background-color: hsla(84, 2%, 100%, 0.5);
+  border-radius: 16px;
+  width: fit-content;
+  transition: ease-in-out 0.5s;
+}
+
+.floating-buttons .custom-button {
+  display: block;
 }
 
 .custom-button {
@@ -225,6 +244,14 @@ form {
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
   background-color: #4875b8;
   border-color: #4875b8;
+  white-space: nowrap;
+}
+
+.custom-outline {
+  background-color: transparent;
+  border-color: #fdfffa;
+  color: #fdfffa;
+  width: 255px;
 }
 
 .whatsapp-button {
@@ -643,7 +670,7 @@ td {
   background-attachment: fixed;
   transition: ease-in-out 0.5s;
 }
-.workouts-section .btwb_webwidget:not(.actividades-section){
+.workouts-section .btwb_webwidget:not(.actividades-section) {
   padding-top: 250px;
 }
 .workouts-section p {
@@ -731,6 +758,13 @@ i {
     margin: 130px 150px 0;
     padding: 4%;
   }
+  .home-section p {
+    max-width: 100%;
+  }
+
+  .home-section .custom-button {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 1661px) and (min-width: 1200px) {
@@ -742,6 +776,9 @@ i {
   }
   .photos {
     max-width: 95%;
+  }
+  .home-section p {
+    max-width: 70%;
   }
 }
 
@@ -765,6 +802,9 @@ i {
   .horarios-section p {
     font-size: 0.9rem;
   }
+  .home-section p {
+    max-width: 80%;
+  }
 }
 @media (max-width: 1173px) and (min-width: 801px) {
   .horarios-section h4 {
@@ -780,7 +820,7 @@ i {
   h1 {
     font-size: 3.6rem;
   }
-  .custom-button,
+  .custom-button:not(header .custom-button),
   p {
     width: 100%;
     text-align: center;
@@ -909,7 +949,8 @@ i {
     margin-bottom: 0px;
   }
 
-  .custom-button {
+  .custom-button,
+  .custom-outline:not(header .custom-button) {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
@@ -926,6 +967,13 @@ i {
     padding-right: 36px;
     padding-bottom: 36px;
     padding-top: 46px;
+  }
+  .home-section p {
+    max-width: 100%;
+  }
+
+  .home-section .custom-button {
+    margin-bottom: 16px;
   }
   .blue-square {
     margin-bottom: 0;
