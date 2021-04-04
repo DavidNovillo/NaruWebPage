@@ -9,7 +9,6 @@ import ProgramaGrupal from "./programas/ProgramaGrupal";
 import Contacto from "./Contacto";
 import ProgramaOnline from "./programas/ProgramaOnline";
 import Workouts from "./Workouts";
-import FloatingButtons from "./FloatingButtons";
 
 function App() {
   return (

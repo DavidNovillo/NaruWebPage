@@ -1,13 +1,16 @@
 import React from "react";
-import Precios from "./Precios";
-import Horarios from "./Horarios";
+import PreciosOnline from "./PreciosOnline";
+/* import Precios from "./Precios"; */
+/* import Horarios from "./Horarios"; */
 
 function PreciosYHorarios() {
   return (
     <div>
-      <Precios />
-      <Horarios />
-      <h2 style={{ textAlign: "center", padding: "30px 0 20px" }}>CRONOGRAMA</h2>
+      <PreciosOnline />
+      {/* <Horarios /> */}
+      <h2 style={{ textAlign: "center", padding: "30px 0 20px" }}>
+        CRONOGRAMA
+      </h2>
       <iframe
         style={{ backgroundColor: "black" }}
         id="blockrandom"
