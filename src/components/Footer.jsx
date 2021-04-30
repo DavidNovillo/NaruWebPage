@@ -60,7 +60,10 @@ function Footer() {
             style={{ textDecoration: "none" }}
           >
             <p>
-              <FaMapMarkerAlt /> Los Cactus Oe1-170 Quito, Ecuador
+              <FaMapMarkerAlt /> Av. Naciones Unidas y Av. de los Shyris, Quito,
+              Ecuador
+              <br />
+              (Ingreso por el Boulevard de la Naciones Unidas)
             </p>
           </a>
           <br />
