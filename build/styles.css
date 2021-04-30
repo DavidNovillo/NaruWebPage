@@ -182,21 +182,7 @@ p {
   height: 25px;
   text-align: center;
 }
-/* .popup-box_close-icon {
-  content: "x";
-  cursor: pointer;
-  position: fixed;
-  right: calc(15% - 30px);
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #999;
-  font-size: 20px;
-} */
+
 form {
   padding: 1.5rem 1rem 1rem 1.5rem;
 }
@@ -244,7 +230,7 @@ form {
 }
 
 .home-section {
-  background-image: url("./images/fondo1.png");
+  background-image: url("./images/fondo1.jpg");
   height: 100%;
   background-position: right top;
   background-repeat: no-repeat;
@@ -359,7 +345,7 @@ form {
 }
 
 .crossfit-section {
-  background-image: url("./images/fondo2.png");
+  background-image: url("./images/fondo2.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -395,7 +381,7 @@ form {
 }
 
 .acerca-section {
-  background-image: url("./images/fondo3.png");
+  background-image: url("./images/fondo3.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -497,7 +483,7 @@ form {
 }
 
 .galeria-section {
-  background-image: url("./images/fondo3.png");
+  background-image: url("./images/fondo3.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -534,7 +520,7 @@ form {
 }
 
 .precios-section {
-  background-image: url("./images/fondo4.png");
+  background-image: url("./images/fondo4.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -699,16 +685,16 @@ td {
 }
 
 .fondo-1 {
-  background-image: url("./images/fondo5.png");
+  background-image: url("./images/fondo5.jpg");
 }
 .fondo-2 {
-  background-image: url("./images/fondo7.png");
+  background-image: url("./images/fondo7.jpg");
 }
 .fondo-3 {
-  background-image: url("./images/fondo8.png");
+  background-image: url("./images/fondo8.jpg");
 }
 .fondo-4 {
-  background-image: url("./images/fondo9.png");
+  background-image: url("./images/fondo9.jpg");
 }
 .workouts-section {
   height: 100%;
@@ -749,7 +735,7 @@ i {
   padding: 5% 9%;
 }
 .programas-section {
-  background-image: url("./images/fondo5.png");
+  background-image: url("./images/fondo5.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -771,7 +757,7 @@ i {
 }
 
 .contacto-section {
-  background-image: url("./images/fondo6.png");
+  background-image: url("./images/fondo6.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;

@@ -4,12 +4,12 @@ import Header from "./Header";
 import Protocolos from "./Protocolos";
 import Crossfit from "./Crossfit";
 import Afiliaciones from "./Afiliaciones";
-import Aviso from "./Aviso"
+/* import Aviso from "./Aviso" */
 
 function HomeSection() {
   return (
     <div>
-    <Aviso />
+    {/* <Aviso /> */}
       <div className="home-section">
         <Header />
         <div className="left-offset">
