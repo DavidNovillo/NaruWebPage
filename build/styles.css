@@ -1167,4 +1167,18 @@ i {
     font-size: 0.8rem;
     margin-bottom: 0;
   }
+  .floating-buttons .custom-button {
+    display: inline-block;
+    font-size: 0.9rem;
+    width: 46%;
+    margin: 5px 5px;
+    padding: 5px;
+  }
+  .floating-buttons{
+    width: 98%;
+    padding: 5px;
+  }
+  .copyright {
+    padding-bottom: 30px;
+  }
 }
