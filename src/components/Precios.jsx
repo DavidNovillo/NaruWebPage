@@ -42,7 +42,7 @@ function Precios() {
               <div className="black-square">
                 <h1>$40</h1>
                 <hr className="separador"></hr>
-                <p>Clases vía Zoom</p>
+                <p>Clases por Zoom</p>
               </div>
             </Col>
           </Row>

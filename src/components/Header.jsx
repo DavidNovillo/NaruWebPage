@@ -110,7 +110,7 @@ function Header() {
           href="https://naru-crossfit.triib.com/free-trial/"
           target="_blank"
         >
-          AGENDAR CLASE DE PRUEBA
+          CLASE DE PRUEBA
         </Button>
         <Button
           className="custom-button"

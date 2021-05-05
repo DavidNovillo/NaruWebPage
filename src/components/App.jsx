@@ -6,7 +6,6 @@ import QuienesSomos from "./QuienesSomos";
 import Galeria from "./Galeria";
 import PreciosYHorarios from "./PreciosYHorarios";
 import ProgramaGrupal from "./programas/ProgramaGrupal";
-import Contacto from "./Contacto";
 import ProgramaOnline from "./programas/ProgramaOnline";
 import Workouts from "./Workouts";
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/workouts" component={Workouts} />
           <Route path="/programa-grupal" component={ProgramaGrupal} />
           <Route path="/programa-online" component={ProgramaOnline} />
-          <Route path="/contacto" component={Contacto} />
         </Switch>
       </Router>
       <Footer />

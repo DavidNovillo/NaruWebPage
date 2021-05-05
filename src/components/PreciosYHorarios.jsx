@@ -1,12 +1,12 @@
 import React from "react";
-import PreciosOnline from "./PreciosOnline";
-/* import Precios from "./Precios"; */
+/* import PreciosOnline from "./PreciosOnline"; */
+import Precios from "./Precios";
 /* import Horarios from "./Horarios"; */
 
 function PreciosYHorarios() {
   return (
     <div>
-      <PreciosOnline />
+      <Precios />
       {/* <Horarios /> */}
       <h2 style={{ textAlign: "center", padding: "30px 0 20px" }}>
         CRONOGRAMA
