@@ -97,6 +97,17 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <a
+        href="https://crossfit.regfox.com/quitonovember2021"
+        className="floating-link"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="http://www.crossfit.com/cf-assets/CF_L1_ANSI_logo_wht.png"
+          alt="Corssfit L1.jpeg"
+        />
+      </a>
       <div
         className="floating-buttons"
         style={

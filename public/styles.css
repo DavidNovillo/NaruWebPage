@@ -171,7 +171,7 @@ p {
 .popup-box_box p {
   text-align: center;
 }
-.popup-box_close-icon{
+.popup-box_close-icon {
   background-color: #fdfffa;
   cursor: pointer;
   position: fixed;
@@ -264,6 +264,18 @@ form {
   border-radius: 16px;
   width: fit-content;
   transition: ease-in-out 0.5s;
+}
+.floating-link {
+  position: fixed;
+  top: 35%;
+  right: 1%;
+  /* width: 253px; */
+  background-color: rgba(14, 14, 14, 0.918);
+  border-radius: 16px;
+  width: fit-content;
+  transition: ease-in-out 0.5s;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .floating-buttons .custom-button {
@@ -822,10 +834,10 @@ i {
   .col-xl-3 {
     max-width: 23%;
   }
-  .precios-section .black-square{
+  .precios-section .black-square {
     min-height: 306px;
   }
-  .precios-section p{
+  .precios-section p {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 1.2rem;
@@ -948,7 +960,7 @@ i {
   .popup-box_box {
     width: 70%;
   }
-  .popup-box_close-icon{
+  .popup-box_close-icon {
     right: calc(15% - 30px);
   }
 }
@@ -958,7 +970,7 @@ i {
   .popup-box_box {
     width: 85%;
   }
-  .popup-box_close-icon{
+  .popup-box_close-icon {
     right: calc(15% - 30px);
     top: calc(100vh - 64vh - 33px);
   }
@@ -1105,7 +1117,7 @@ i {
     margin: 130px 20px 0;
     padding: 4%;
   }
- 
+
   .horarios-section h4 {
     font-size: 0.9rem;
     padding-top: 0;
@@ -1174,7 +1186,7 @@ i {
     margin: 5px 5px;
     padding: 5px;
   }
-  .floating-buttons{
+  .floating-buttons {
     width: 98%;
     padding: 5px;
   }
