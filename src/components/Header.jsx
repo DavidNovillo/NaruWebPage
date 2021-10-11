@@ -97,6 +97,7 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      #imagen de CF lvl1
       <a
         href="https://crossfit.regfox.com/quitojanuary2022"
         className="floating-link"
