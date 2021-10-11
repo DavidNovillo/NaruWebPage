@@ -98,7 +98,7 @@ function Header() {
         </Navbar.Collapse>
       </Navbar>
       <a
-        href="https://crossfit.regfox.com/quitonovember2021"
+        href="https://crossfit.regfox.com/quitojanuary2022"
         className="floating-link"
         target="_blank"
         rel="noreferrer"
