@@ -69,7 +69,7 @@ function Header() {
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/quienes-somos">Quiénes somos</Nav.Link>
             <Nav.Link href="/galeria">Galería</Nav.Link>
-            <Nav.Link href="/precios-y-horarios">Precios y Horarios</Nav.Link>
+            <Nav.Link href="/precios-y-horarios">Membresías y Horarios</Nav.Link>
             <Nav.Link href="/workouts">WORKOUTS</Nav.Link>
             <NavDropdown title="Programas" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/programa-grupal">
@@ -97,7 +97,7 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      #imagen de CF lvl1
+      {/* #imagen de CF lvl1
       <a
         href="https://crossfit.regfox.com/quitojanuary2022"
         className="floating-link"
@@ -108,7 +108,7 @@ function Header() {
           src="http://www.crossfit.com/cf-assets/CF_L1_ANSI_logo_wht.png"
           alt="Corssfit L1.jpeg"
         />
-      </a>
+      </a> */}
       <div
         className="floating-buttons"
         style={

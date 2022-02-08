@@ -1,5 +1,5 @@
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+@import '~react-image-gallery/styles/css/image-gallery.css';
 body {
   margin: 0;
   background-color: #0a0a0a;
@@ -230,7 +230,7 @@ form {
 }
 
 .home-section {
-  background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1");
+  background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1');
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -240,8 +240,8 @@ form {
   overflow: hidden;
 }
 .blue-gradient {
-/*   background: #1d2951b0; */
-  background-image: linear-gradient(to right,#1d2951ee,#1d295134);
+  /*   background: #1d2951b0; */
+  background-image: linear-gradient(to right, #1d2951ee, #1d295134);
   z-index: 2;
 }
 
@@ -319,7 +319,7 @@ form {
 }
 
 .black-triangle {
-  background-image: url("./images/black_triangle.png");
+  background-image: url('./images/black_triangle.png');
   background-size: contain;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -343,7 +343,7 @@ form {
 }
 
 .foto-protocolos {
-  background-image: url("./images/protocolos.jpg");
+  background-image: url('./images/protocolos.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -359,7 +359,7 @@ form {
 }
 
 .crossfit-section {
-  background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1.2");
+  background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1.2');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -395,7 +395,7 @@ form {
 }
 
 .acerca-section {
-  background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo3");
+  background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo3');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -406,7 +406,7 @@ form {
   background-attachment: fixed;
 }
 
-.acerca-section .blue-gradient{
+.acerca-section .blue-gradient {
   padding-bottom: 80px;
 }
 
@@ -501,7 +501,7 @@ form {
 }
 
 .galeria-section {
-  background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo4");
+  background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo4');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -538,7 +538,7 @@ form {
 }
 
 .precios-section {
-  background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo5");
+  background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo5');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -547,7 +547,7 @@ form {
   text-align: center;
   background-attachment: fixed;
 }
-.precios-section .blue-gradient{
+.precios-section .blue-gradient {
   padding-bottom: 80px;
 }
 
@@ -577,6 +577,18 @@ form {
   padding: 1rem 0 2rem;
   margin: 0 auto;
   font-size: 1.3rem;
+}
+
+@media (min-width: 1201px) {
+  .memebresia__img {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .memebresia__img {
+    width: 80vw;
+  }
 }
 
 .separador {
@@ -705,16 +717,16 @@ td {
 }
 
 .fondo-1 {
-  background-image: url("./images/fondo5.jpg");
+  background-image: url('./images/fondo5.jpg');
 }
 .fondo-2 {
-  background-image: url("./images/fondo7.jpg");
+  background-image: url('./images/fondo7.jpg');
 }
 .fondo-3 {
-  background-image: url("./images/fondo8.jpg");
+  background-image: url('./images/fondo8.jpg');
 }
 .fondo-4 {
-  background-image: url("./images/fondo9.jpg");
+  background-image: url('./images/fondo9.jpg');
 }
 .workouts-section {
   height: 100%;
@@ -755,7 +767,7 @@ i {
   padding: 5% 9%;
 }
 .programas-section {
-  background-image: url("./images/fondo5.jpg");
+  background-image: url('./images/fondo5.jpg');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -777,7 +789,7 @@ i {
 }
 
 .contacto-section {
-  background-image: url("./images/fondo6.jpg");
+  background-image: url('./images/fondo6.jpg');
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -799,7 +811,7 @@ i {
 
 @media (max-width: 992px) and (min-width: 501px) {
   .home-section {
-    background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-992/fondo1");
+    background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-992/fondo1');
   }
   footer .top-padding {
     padding-top: 0;
@@ -824,6 +836,9 @@ i {
   .home-section .custom-button {
     margin-bottom: 16px;
   }
+  .memebresia__img {
+    margin-left: -100px;
+  }
 }
 
 @media (max-width: 1661px) and (min-width: 1200px) {
@@ -843,7 +858,7 @@ i {
 
 @media (min-width: 1200px) {
   .home-section {
-    background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1");
+    background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1920/fondo1');
   }
   .col-xl-3 {
     max-width: 23%;
@@ -860,7 +875,7 @@ i {
 
 @media (max-width: 1199px) and (min-width: 992px) {
   .home-section {
-    background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1199/fondo1");
+    background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-1199/fondo1');
   }
   .col-lg-6 {
     max-width: 45%;
@@ -891,7 +906,7 @@ i {
 }
 @media (max-width: 800px) and (min-width: 577px) {
   .home-section {
-    background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-800/fondo1");
+    background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-800/fondo1');
   }
   h1 {
     font-size: 3.6rem;
@@ -983,12 +998,16 @@ i {
   .popup-box_close-icon {
     right: calc(15% - 30px);
   }
+
+  .memebresia__img {
+    margin-left: -50px;
+  }
 }
 
 /* condiciones para celular vertical */
 @media (max-width: 576px) {
   .home-section {
-    background-image: url("https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-576/fondo1");
+    background-image: url('https://ik.imagekit.io/narucrossfit2021/Fondos/tr:w-576/fondo1');
   }
   .popup-box_box {
     width: 85%;
@@ -1156,6 +1175,10 @@ i {
     width: 50%;
     text-align: center;
     font-size: 1rem;
+  }
+  .memebresia__img {
+    margin-left: -25px;
+    width: 95vw;
   }
   .instagram-section ._wPDyp {
     max-width: 300px;
