@@ -1,14 +1,14 @@
 import React from 'react';
 /* import PreciosOnline from "./PreciosOnline"; */
 import Precios from './Precios';
-/* import Horarios from "./Horarios"; */
+import Horarios from './Horarios';
 
 function PreciosYHorarios() {
   return (
     <div>
       <Precios />
-      {/* <Horarios /> */}
-      <h2 style={{ textAlign: 'center', padding: '30px 0 20px' }}>
+      <Horarios />
+      {/* <h2 style={{ textAlign: 'center', padding: '30px 0 20px' }}>
         CRONOGRAMA
       </h2>
       <iframe
@@ -22,7 +22,7 @@ function PreciosYHorarios() {
         frameBorder='1'
         className='wrapper'
         title='schedule'
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 }
