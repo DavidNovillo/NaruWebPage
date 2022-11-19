@@ -29,9 +29,10 @@ function Protocolos() {
         <br />
         BIOSEGURIDAD
       </h2>
+
       <Container fluid>
         <Row className="justify-content-left">
-          <Col xl={5} className="blue-square">
+          <Col xl={6} className="blue-square">
             <br />
             <p>
               <GiMouse className="iconos-protocolo" /> Reserva en línea tu
@@ -74,9 +75,9 @@ function Protocolos() {
               por clase
             </p>
           </Col>
-          <Col xl={1} lg={12}></Col>
+          {/* <Col xl={1} lg={12}></Col> */}
 
-          <Col xl={6} lg={12} className="blue-square">
+          {/* <Col xl={6} lg={12} className="blue-square">
             <br />
             <h3>RESPONSABILIDAD COMPARTIDA</h3>
             <br />
@@ -103,7 +104,7 @@ function Protocolos() {
               </div>
               Zona segura para entrenador a 2 metros de los atletas
             </p>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

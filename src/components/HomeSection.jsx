@@ -21,7 +21,7 @@ function HomeSection() {
               funcional, sana.
             </p>
             <Button
-              href="https://naru-crossfit.triib.com/free-trial/"
+              href="https://narucrossfit.sites.zenplanner.com/freeTrial.cfm"
               variant="primary"
               type="button"
               className="custom-button"

@@ -26,7 +26,7 @@ function Staff() {
             </p>
           </div>
         </Col>
-        <Col xl={4} lg={6} className="bottom-margin">
+        {/* <Col xl={4} lg={6} className="bottom-margin">
           <div id="photo-leo">
             <img src="/images/Leo.png" alt="" className="photos" />
           </div>
@@ -67,7 +67,7 @@ function Staff() {
               CF Trainer Lvl 1<br />
             </p>
           </div>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

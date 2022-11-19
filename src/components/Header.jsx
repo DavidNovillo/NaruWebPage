@@ -69,7 +69,9 @@ function Header() {
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/quienes-somos">Quiénes somos</Nav.Link>
             <Nav.Link href="/galeria">Galería</Nav.Link>
-            <Nav.Link href="/precios-y-horarios">Membresías y Horarios</Nav.Link>
+            <Nav.Link href="/precios-y-horarios">
+              Membresías y Horarios
+            </Nav.Link>
             <Nav.Link href="/workouts">WORKOUTS</Nav.Link>
             <NavDropdown title="Programas" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/programa-grupal">
@@ -119,7 +121,7 @@ function Header() {
       >
         <Button
           className="custom-button"
-          href="https://naru-crossfit.triib.com/free-trial/"
+          href="https://narucrossfit.sites.zenplanner.com/freeTrial.cfm"
           target="_blank"
         >
           CLASE DE PRUEBA
